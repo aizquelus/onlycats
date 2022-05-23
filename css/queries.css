@@ -1,0 +1,209 @@
+/*-------------------- Screen max 1050px --------------------*/
+
+@media only screen and (max-width: 1050px) {
+    .section_stars {
+        background: linear-gradient(to top, rgba(33,85,205,1) 0%, rgb(104, 186, 199) 100%);
+    }
+
+    .features_item-box,
+    .stars_item-box {
+        flex-direction: column;
+    }
+
+    .features_item {
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .stars_item-box {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+}
+/*-------------------- Screen max 800px --------------------*/
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .main_container h1 {
+        font-size: 2.5rem;
+        width: 60%;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+
+    /* ---- Styles for Hamburger Menu */
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar_menu {
+        display: none;
+    }
+
+    .hamburger_menu {
+        position: absolute;
+        display: block;
+        top: 10vh;
+        right: 0;
+        z-index: 100;
+    }
+
+    .menu_navlinks {
+        height: 90vh;
+        width: 40vw;
+        display: grid;
+        justify-items: end;
+        background: linear-gradient(to right, rgba(72,141,202,1) 0%, rgb(103, 185, 199, 1) 100%);
+        padding: 30px 30px 0 0;
+    }
+
+    .navlinks_item::after {
+        display: block;
+        height: 2px;
+        background-color: #2155CD;
+        content: " ";
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* ---- End of styles for Hamburger Menu */
+
+    .stars_item-box {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+    }
+
+    .stars_item {
+        margin: 40px;
+        justify-self: center;
+    }
+
+    .stars_img {
+        min-width: 170px;
+    }
+
+    .reviews_container {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .block-text {
+        font-size: 1.16rem;
+    }
+    .block-text:first-child {
+        margin-top: 50px;
+    }
+
+    cite {
+        margin-top: 25px;
+        display: block;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .form__group-terms,
+    .form__form-message,
+    .form__group-message,
+    .form__group-btn-send,
+    .form__location {
+        grid-column: 1;
+    }
+
+    .form__group-message textarea {
+        width: 100%;
+        height: 150px;
+    }
+
+    .form__btn {
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
+    }
+
+}
+/*-------------------- Screen max 600px --------------------*/
+
+@media only screen and (max-width: 600px) {
+    .main_container h1 {
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    /* ---- Styles for Hamburger Menu */
+    .navlinks_item {
+        font-size: 1rem;
+    }
+    /* ---- End of styles for Hamburger Menu */
+
+    .section_stars {
+        padding: 7% 15%;
+    }
+
+    .stars_item-box > .stars_item:first-child {
+        margin-top: 0;
+    }
+
+    .stars_item-box > .stars_item:last-child {
+        margin-bottom: 0;
+    }
+
+    .stars_img {
+        width: 150px;
+    }
+
+    .section_plans {
+        padding: 7% 0 20% 0;
+    }
+
+    .card_body > .card_feature:first-of-type {
+        margin-top: 20px;
+    }
+
+    .card_body .card_feature:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .card_feature p {
+        padding: 2% 0;
+    }
+
+    .plans_card {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .plans_card > * {
+        border-radius: 0;
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
+
+    iframe {
+        height: 200px;
+    }
+}
