@@ -73,12 +73,12 @@ form.addEventListener('submit', (e) => {
         document.querySelectorAll('.form__group--correct').forEach((icon) => {
             icon.classList.remove('form__group--correct');
         });
-     } else {
-         document.getElementById('form__form-message').classList.add('form__form-message--active');
-         setTimeout(() => {
+    } else {
+        document.getElementById('form__form-message').classList.add('form__form-message--active');
+        setTimeout(() => {
             document.getElementById('form__form-message').classList.remove('form__form-message--active')
         }, 5000);
-     }
+    }
 
 });
 
